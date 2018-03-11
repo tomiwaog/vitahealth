@@ -42,6 +42,12 @@ public class Main {
 			case 11:
 				FoodList.calcSuperMalt();
 				break;
+			case 12:
+				FoodList.calcAllBran();
+				break;
+			case 13:
+				FoodList.calcAlmondMilk();
+				break;
 			case 100:
 				quit = true;
 				break;
@@ -68,6 +74,8 @@ public class Main {
 						"6. Carrots \n"+
 						"7. Bananas \n"+
 						"\n10. WATER (500ml) \n"+
-						"11. SuperMalt Drink \n");
+						"11. SuperMalt Drink \n" +
+						"12. All Bran 40g \n"+
+						"13. Almond Milk (100ml)");
 	}
 }

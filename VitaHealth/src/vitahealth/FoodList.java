@@ -234,6 +234,37 @@ public class FoodList {
 		supermalt.addVitamins(vitB5Pantothenic, "5.0mg" );
 		Food.addToDietQueryList(supermalt);
 	}
+	
+	public static void calcAllBran(){
+		// All Bran Flakes
+		Food allBran = new Food("Kellogs All Bran 40g)", 0,"Clear");
+		allBran.addVitamins(vitB1Thiamine, "0.28mg" );
+		allBran.addVitamins(vitB2RiboFlavin, "0.35mg" );
+		allBran.addVitamins(vitB3Niacin, "4.0mg" );
+		allBran.addVitamins(vitB6, "0.35mg" );
+		allBran.addVitamins(vitB9Folate, "100mcg");
+		allBran.addVitamins(vitD, "1.3mcg" );
+		allBran.addVitamins(vitB12, "0.63mcg" );
+		allBran.addVitamins(iron, "3.5mg");
+		allBran.addVitamins(sodium, "380mg");
+		allBran.addVitamins(fibre, "11000mg");
+		Food.addToDietQueryList(allBran);
+	}
+	
+	public static void calcAlmondMilk(){
+		// Almond Milk
+		Food almondMilk = new Food("Almond Milk (100m)", 105,"Clear");
+		almondMilk.addVitamins(fibre, "200mg");
+		almondMilk.addVitamins(sodium, "3000mg");
+		almondMilk.addVitamins(vitD, "0.75mcg");
+		almondMilk.addVitamins(vitE, "1.8mg");
+		almondMilk.addVitamins(vitB12, "0.38mcg");
+		almondMilk.addVitamins(fibre, "200mg");
+		almondMilk.addVitamins(vitB2RiboFlavin, "0.21mg");
+		almondMilk.addVitamins(calcium, "120mg");
+		Food.addToDietQueryList(almondMilk);
+	}
+	
 	public static void calcWaterDrink(){
 		// Water Liquid
 		Food waterDrink = new Food("Water (500ml)", 0,"Clear");
