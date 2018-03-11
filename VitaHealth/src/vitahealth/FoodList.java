@@ -223,6 +223,17 @@ public class FoodList {
 		bananas.addVitamins(selenium, "1.2mcg");
 		Food.addToDietQueryList(bananas);
 	}
+	
+	public static void calcSuperMalt(){
+		// SuperMalt Drink
+		Food supermalt = new Food("SuperMalt (330ml)", 0,"Clear");
+		supermalt.addVitamins(vitB1Thiamine, "4.6mg" );
+		supermalt.addVitamins(vitB2RiboFlavin, "2.6mg" );
+		supermalt.addVitamins(vitB3Niacin, "24mg" );
+		supermalt.addVitamins(vitB6, "2.3mg" );
+		supermalt.addVitamins(vitB5Pantothenic, "5.0mg" );
+		Food.addToDietQueryList(supermalt);
+	}
 	public static void calcWaterDrink(){
 		// Water Liquid
 		Food waterDrink = new Food("Water (500ml)", 0,"Clear");

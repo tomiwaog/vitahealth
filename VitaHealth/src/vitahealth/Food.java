@@ -166,7 +166,7 @@ public class Food {
 		System.out.print("\nVitamin B12: \t" + ((Math.round(totalB12 * 100.0)) / 100.0) + "mg | "+ (int) ((totalB12 /0.0024 ) * 100) + "%"); //Almost impossible to overdose
 		System.out.print("\nVitamin C: \t" + ((Math.round(totalC * 100.0)) / 100.0) + "mg | Men: " + (int) ((totalC / 90) * 100) + "% | Women: " + (int) ((totalC / 75) * 100) + "% ");
 		System.out.print("\nVitamin D: \t" + + ((Math.round(totalD * 100.0)) / 100.0) + "mg | "+ (int) ((totalD / 0.02) * 100) + "%");
-		System.out.println("\nVitamin E: \t" + + ((Math.round(totalE * 100.0)) / 100.0) + "mg | " + (int) ((totalE / 30) * 100) + "%");
+		System.out.print("\nVitamin E: \t" + + ((Math.round(totalE * 100.0)) / 100.0) + "mg | " + (int) ((totalE / 30) * 100) + "%");
 		System.out.println("\nVitamin K: \t" + + ((Math.round(totalK * 100.0)) / 100.0) + "mg | " + (int) ((totalK / 0.1) * 100) + "%");
 
 

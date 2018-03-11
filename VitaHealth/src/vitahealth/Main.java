@@ -39,6 +39,9 @@ public class Main {
 			case 10:
 				FoodList.calcWaterDrink();
 				break;
+			case 11:
+				FoodList.calcSuperMalt();
+				break;
 			case 100:
 				quit = true;
 				break;
@@ -64,6 +67,7 @@ public class Main {
 						"5. Kiwi \n"+
 						"6. Carrots \n"+
 						"7. Bananas \n"+
-						"\n10. WATER (500ml) \n");
+						"\n10. WATER (500ml) \n"+
+						"11. SuperMalt Drink \n");
 	}
 }
