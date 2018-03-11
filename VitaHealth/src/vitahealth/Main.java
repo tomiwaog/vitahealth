@@ -36,6 +36,12 @@ public class Main {
 			case 7:
 				FoodList.calcBananas();
 				break;
+			case 8:
+				FoodList.calcClementines();
+				break;
+			case 9:
+				FoodList.calcTomatoes();
+				break;
 			case 10:
 				FoodList.calcWaterDrink();
 				break;
@@ -48,6 +54,9 @@ public class Main {
 			case 13:
 				FoodList.calcAlmondMilk();
 				break;
+			case 14:
+				FoodList.calcEggs();
+				break;	
 			case 100:
 				quit = true;
 				break;
@@ -73,9 +82,12 @@ public class Main {
 						"5. Kiwi \n"+
 						"6. Carrots \n"+
 						"7. Bananas \n"+
-						"\n10. WATER (500ml) \n"+
+						"8. Clementine \n"+
+						"9. Tomatoes \n"+
+						"10. WATER (500ml) \n"+
 						"11. SuperMalt Drink \n" +
 						"12. All Bran 40g \n"+
-						"13. Almond Milk (100ml)");
+						"13. Almond Milk (100ml)\n"
+						+ "14. Eggs \n");
 	}
 }

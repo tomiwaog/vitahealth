@@ -237,7 +237,7 @@ public class FoodList {
 	
 	public static void calcAllBran(){
 		// All Bran Flakes
-		Food allBran = new Food("Kellogs All Bran 40g)", 0,"Clear");
+		Food allBran = new Food("Kellogs All Bran (40g)", 0,"Clear");
 		allBran.addVitamins(vitB1Thiamine, "0.28mg" );
 		allBran.addVitamins(vitB2RiboFlavin, "0.35mg" );
 		allBran.addVitamins(vitB3Niacin, "4.0mg" );
@@ -253,7 +253,7 @@ public class FoodList {
 	
 	public static void calcAlmondMilk(){
 		// Almond Milk
-		Food almondMilk = new Food("Almond Milk (100m)", 105,"Clear");
+		Food almondMilk = new Food("Almond Milk (100m)", 0,"Clear");
 		almondMilk.addVitamins(fibre, "200mg");
 		almondMilk.addVitamins(sodium, "3000mg");
 		almondMilk.addVitamins(vitD, "0.75mcg");
@@ -264,7 +264,87 @@ public class FoodList {
 		almondMilk.addVitamins(calcium, "120mg");
 		Food.addToDietQueryList(almondMilk);
 	}
+
+	public static void calcEggs(){
+		// Eggs medium
+		Food eggs = new Food("Egg (medium)", 105,"white yellow");
+		eggs.addVitamins(vitA, "214IU" );
+		eggs.addVitamins(vitC, "0.0mg" );
+		eggs.addVitamins(vitD, "15.4IU" );
+		eggs.addVitamins(vitE, "0.4mg");
+		eggs.addVitamins(vitK, "0.1mcg");
+		eggs.addVitamins(vitB1Thiamine, "0.01mg" );
+		eggs.addVitamins(vitB2RiboFlavin, "0.2mg" );
+		eggs.addVitamins(vitB3Niacin, "0.0mg" );
+		eggs.addVitamins(vitB6, "0.1mg" );
+		eggs.addVitamins(vitB9Folate, "20.7mcg");
+		eggs.addVitamins(vitB12, "0.6mcg");
+		eggs.addVitamins(vitB5Pantothenic, "0.6mg" );
+		
+		//Minerals
+		eggs.addVitamins(calcium, "23.3mg" );
+		eggs.addVitamins(iron, "0.8mg" );
+		eggs.addVitamins(magnesium, "5.3mg" );
+		eggs.addVitamins(phosphorus, "84.0mg" );
+		eggs.addVitamins(potassium, "59.0mg" );
+		eggs.addVitamins(sodium, "61.6mg" );
+		eggs.addVitamins(zinc, "0.5mg" );
+		eggs.addVitamins(copper, "0.01mg" );
+		eggs.addVitamins(manganese, "0.01mg");
+		eggs.addVitamins(selenium, "13.9mcg");
+		Food.addToDietQueryList(eggs);
+	}
 	
+	public static void calcClementines(){
+		// Clementine medium
+		Food clementine = new Food("Clementine (medium)", 0,"Orange");
+		clementine.addVitamins(vitC, "36.10mg" );
+		clementine.addVitamins(vitE, "0.1mg");
+		clementine.addVitamins(vitB1Thiamine, "0.1mg" );
+		clementine.addVitamins(vitB2RiboFlavin, "0.01mg" );
+		clementine.addVitamins(vitB3Niacin, "0.5mg" );
+		clementine.addVitamins(vitB6, "0.1mg" );
+		clementine.addVitamins(vitB9Folate, "17.8mcg");
+		clementine.addVitamins(vitB5Pantothenic, "0.1mg" );
+		
+		//Minerals
+		clementine.addVitamins(calcium, "22.2mg" );
+		clementine.addVitamins(iron, "0.1mg" );
+		clementine.addVitamins(magnesium, "7.4mg" );
+		clementine.addVitamins(phosphorus, "15.5mg" );
+		clementine.addVitamins(potassium, "131mg" );
+		clementine.addVitamins(sodium, "0.7mg" );
+		clementine.addVitamins(copper, "0.01mg" );
+		clementine.addVitamins(manganese, "0.01mg");
+		clementine.addVitamins(selenium, "0.1mcg");
+		Food.addToDietQueryList(clementine);
+	}
+	public static void calcTomatoes(){
+		// Tomatoes medium
+		Food tomatoes = new Food("Tomato", 105,"red");
+		tomatoes.addVitamins(vitA, "1025IU" );
+		tomatoes.addVitamins(vitC, "15.6mg" );
+		tomatoes.addVitamins(vitE, "0.7mg");
+		tomatoes.addVitamins(vitK, "9.7mcg");
+		tomatoes.addVitamins(vitB1Thiamine, "0.05g" );
+		tomatoes.addVitamins(vitB2RiboFlavin, "0.01mg" );
+		tomatoes.addVitamins(vitB3Niacin, "0.7mg" );
+		tomatoes.addVitamins(vitB6, "0.1mg" );
+		tomatoes.addVitamins(vitB9Folate, "18.4mcg");
+		tomatoes.addVitamins(vitB5Pantothenic, "0.1mg" );
+		
+		//Minerals
+		tomatoes.addVitamins(calcium, "12.3mg" );
+		tomatoes.addVitamins(iron, "0.3mg" );
+		tomatoes.addVitamins(magnesium, "13.5mg" );
+		tomatoes.addVitamins(phosphorus, "29.5mg" );
+		tomatoes.addVitamins(potassium, "292mg" );
+		tomatoes.addVitamins(sodium, "6.2mg" );
+		tomatoes.addVitamins(zinc, "0.2mg" );
+		tomatoes.addVitamins(copper, "0.1mg" );
+		tomatoes.addVitamins(manganese, "0.1mg");
+		Food.addToDietQueryList(tomatoes);
+	}	
 	public static void calcWaterDrink(){
 		// Water Liquid
 		Food waterDrink = new Food("Water (500ml)", 0,"Clear");

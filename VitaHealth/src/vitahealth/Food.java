@@ -8,8 +8,8 @@ public class Food {
 	private ArrayList<Vitamins> foodVitamins = new ArrayList<Vitamins>();
 	private static ArrayList<Food> dietQueryList = new ArrayList<Food>();
 	private String color;
-	static double totalA = 0, totalB1, totalB2, totalB3,totalB5,totalB6,totalB9,totalB12,water500ML,totalCalcium,
-			totalC = 0, totalD,totalK,totalIron, totalMagnesium, totalPhosphorus, totalPotassium, totalSodium, totalZinc, totalCopper, totalManganese, totalSelenium,
+	static double totalA,totalB1, totalB2, totalB3,totalB5,totalB6,totalB9,totalB12,water500ML,totalCalcium,
+			totalC,totalD,totalK,totalFibre,totalIron, totalOmega3,totalOmega6,totalMagnesium, totalPhosphorus, totalPotassium, totalSodium, totalZinc, totalCopper, totalManganese, totalSelenium,
 			totalE = 0;
 
 	public Food(String name, int calories, String color) {
@@ -133,7 +133,14 @@ public class Food {
 		}else if (vitName.contains("Selenium")) {
 			totalSelenium+= vitQuantity;
 		}
-
+		else if (vitName.contains("Omega 3")) {
+			totalOmega3+= vitQuantity;
+		}else if (vitName.contains("Omega 6")) {
+			totalOmega6+= vitQuantity;
+		}
+		else if (vitName.contains("Fibre")) {
+			totalFibre= vitQuantity;
+		}
 	}
 
 	public static void addToDietQueryList(Food food) {
@@ -176,11 +183,14 @@ public class Food {
 		System.out.print("\nMagnesium: \t" + ((Math.round(totalMagnesium * 100.0)) / 100.0) + "mg | " + (int) ((totalMagnesium / 420) * 100) + "%");
 		System.out.print("\nPhosphorus: \t" + ((Math.round(totalPhosphorus * 100.0)) / 100.0) + "mg | " + (int) ((totalPhosphorus / 700) * 100) + "%");
 		System.out.print("\nPotassium: \t" + ((Math.round(totalPotassium * 100.0)) / 100.0) + "mg | " + (int) ((totalPotassium / 4700) * 100) + "%");
-		System.out.print("\nSodium: \t" + ((Math.round(totalSodium * 100.0)) / 100.0) + "mg | " + (int) ((totalSodium / 1500) * 100) + "% (NB: lower is better)");
+		System.out.print("\nSodium: \t" + ((Math.round(totalSodium * 100.0)) / 100.0) + "mg | " + (int) ((totalSodium / 1500) * 100) + "% (NB: less is better)");
 		System.out.print("\nZinc: \t\t" + ((Math.round(totalZinc * 100.0)) / 100.0) + "mg | " + (int) ((totalZinc / 11) * 100) + "%");
 		System.out.print("\nCopper: \t" + ((Math.round(totalZinc * 100.0)) / 100.0) + "mg | " + (int) ((totalCopper / 1.3) * 100) + "%");
 		System.out.print("\nManganese: \t" + ((Math.round(totalManganese * 100.0)) / 100.0) + "mg | " + (int) ((totalManganese / 2.3) * 100) + "%"); //1.8 for women
-		System.out.print("\nSelenium: \t" + ((Math.round(totalSelenium * 100.0)) / 100.0) + "mg | " + (int) ((totalSelenium / 0.055) * 100) + "%\n"); //
+		System.out.print("\nSelenium: \t" + ((Math.round(totalSelenium * 100.0)) / 100.0) + "mg | " + (int) ((totalSelenium / 0.055) * 100) + "%"); //
+		System.out.print("\nOmega 3: \t" + ((Math.round(totalOmega3 * 100.0)) / 100.0) + "mg | " + (int) ((totalOmega3 / 250) * 100) + "%"); //
+		System.out.print("\nOmega 6: \t" + ((Math.round(totalOmega6 * 100.0)) / 100.0) + "mg | " + (int) ((totalOmega6 / 17) * 100) + "% (NB: less is better)"); //
+		System.out.print("\nFibre: \t\t" + ((Math.round(totalFibre * 100.0)) / 100.0) + "mg | " + (int) ((totalFibre / 30) * 100) + "%"); //
 	
 		System.out.println("*******************************************");
 		System.out.println("*******************************************");
