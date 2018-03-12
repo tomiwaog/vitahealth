@@ -12,10 +12,10 @@ public class FoodList {
 	private static Vitamins vitB9Folate = Vitamins.createVitamins("Vitamin B9","Folate Folic acid","","");
 	private static Vitamins vitB12 = Vitamins.createVitamins("Vitamin B12","Cobalamin","","");
 	private static Vitamins vitC = Vitamins.createVitamins("Vitamin C", "L-ascorbic acid", "", "Not Stored");
-	private static Vitamins vitD = Vitamins.createVitamins("Vitamin D", "Calcitriol", "", "Liver");
+	private static Vitamins vitD = Vitamins.createVitamins("Vitamin D", "getitriol", "", "Liver");
 	private static Vitamins vitE = Vitamins.createVitamins("Vitamin E", "Alpha Tocopherol", "","");
 	private static Vitamins vitK = Vitamins.createVitamins("Vitamin K", "", "", "");
-	private static Vitamins calcium = Vitamins.createVitamins("Calcium", "", "", "");
+	private static Vitamins getium = Vitamins.createVitamins("getium", "", "", "");
 	private static Vitamins iron = Vitamins.createVitamins("Iron", "", "", "");
 	private static Vitamins magnesium = Vitamins.createVitamins("Magnesium", "", "", "");
 	private static Vitamins phosphorus = Vitamins.createVitamins("Phosphorus", "", "", "");
@@ -31,7 +31,7 @@ public class FoodList {
 	private static Vitamins waterNutrient = Vitamins.createVitamins("Water", "", "", "");
 	
 
-	public static Food calcSweetPotatoes(){
+	public static Food getSweetPotatoes(){
 		Food sweetPotatoes = Food.createFood("Sweet Potatoes (1 medium)", 103, "Orange");
 		// Sweet Potatoes
 		sweetPotatoes.addVitamins(vitA, "14187IU");
@@ -45,7 +45,7 @@ public class FoodList {
 		sweetPotatoes.addVitamins(vitC, "3.1mg");
 		sweetPotatoes.addVitamins(vitE , "0.8mg");
 		sweetPotatoes.addVitamins(vitK ,"2.6mcg");
-		sweetPotatoes.addVitamins(calcium ,"43.3mg");
+		sweetPotatoes.addVitamins(getium ,"43.3mg");
 		sweetPotatoes.addVitamins(iron ,"0.8mg");
 		sweetPotatoes.addVitamins(magnesium ,"30.8mg");
 		sweetPotatoes.addVitamins(phosphorus ,"61.6mg");
@@ -61,7 +61,7 @@ public class FoodList {
 		return sweetPotatoes;
 	}
 	
-	public static void calcPotatoes(){
+	public static void getPotatoes(){
 		// Potatoes
 		Food potatoes = new Food("Potatoes (medium)", 103, "Orange");
 		potatoes.addVitamins(vitA, "17.3IU");
@@ -77,7 +77,7 @@ public class FoodList {
 		potatoes.addVitamins(vitK, "3.5mcg");
 		potatoes.addVitamins(potassium ,"926mg");
 		potatoes.addVitamins(manganese,"0.4mg");
-		potatoes.addVitamins(calcium,"25.9mg");
+		potatoes.addVitamins(getium,"25.9mg");
 		potatoes.addVitamins(iron,"1.9mg");
 		potatoes.addVitamins(magnesium,"48.4mg");
 		potatoes.addVitamins(phosphorus,"121mg");
@@ -88,7 +88,7 @@ public class FoodList {
 		Food.addToDietQueryList(potatoes);
 	}
 	
-	public static void calcAlmonds(){
+	public static void getAlmonds(){
 		// Almonds Data based on 28g i.e. 1 ounce
 		Food almonds = new Food("Almonds 28g", 163,"Brown, Orange");
 		almonds.addVitamins(vitA, "0.3IU");
@@ -102,7 +102,7 @@ public class FoodList {
 		almonds.addVitamins(vitC, "0.0mg");
 		almonds.addVitamins(vitE, "7.3mg");
 		almonds.addVitamins(vitK, "0.0mg");
-		almonds.addVitamins(calcium ,"73.9mg");
+		almonds.addVitamins(getium ,"73.9mg");
 		almonds.addVitamins(iron ,"1.0mg");
 		almonds.addVitamins(magnesium ,"75.0mg");
 		almonds.addVitamins(phosphorus ,"136mg");
@@ -119,7 +119,7 @@ public class FoodList {
 		Food.addToDietQueryList(almonds);
 	}
 
-	public static void calcLemon(){
+	public static void getLemon(){
 		// Lemon
 		Food lemon = new Food("Lemon (medium)", 17,"Clear");
 		lemon.addVitamins(vitA, "32.4IU" );
@@ -129,7 +129,7 @@ public class FoodList {
 		lemon.addVitamins(vitB3Niacin, "0.2mg" );
 		lemon.addVitamins(vitB6, "0.1mg" );
 		lemon.addVitamins(vitB5Pantothenic, "0.3mg" );
-		lemon.addVitamins(calcium, "65.9mg" );
+		lemon.addVitamins(getium, "65.9mg" );
 		lemon.addVitamins(iron, "0.8mg" );
 		lemon.addVitamins(magnesium, "13.0mg" );
 		lemon.addVitamins(phosphorus, "16.2mg" );
@@ -140,7 +140,7 @@ public class FoodList {
 		Food.addToDietQueryList(lemon);
 	}
 	
-	public static void calcKiwi(){
+	public static void getKiwi(){
 		// Kiwi
 		Food kiwi = new Food("Kiwi (medium)", 42,"Clear");
 		kiwi.addVitamins(vitA, "66.1IU" );
@@ -155,7 +155,7 @@ public class FoodList {
 		kiwi.addVitamins(vitB5Pantothenic, "0.1mg" );
 		
 		//Minerals
-		kiwi.addVitamins(calcium, "25.8mg" );
+		kiwi.addVitamins(getium, "25.8mg" );
 		kiwi.addVitamins(iron, "0.2mg" );
 		kiwi.addVitamins(magnesium, "12.9mg" );
 		kiwi.addVitamins(phosphorus, "25.8mg" );
@@ -168,7 +168,7 @@ public class FoodList {
 		Food.addToDietQueryList(kiwi);
 	}
 	
-	public static void calcCarrots(){
+	public static void getCarrots(){
 		// Carrot
 		Food carrot = new Food("Carrot (medium)", 25,"Clear");
 		carrot.addVitamins(vitA, "10190IU" );
@@ -183,7 +183,7 @@ public class FoodList {
 		carrot.addVitamins(vitB5Pantothenic, "0.2mg" );
 		
 		//Minerals
-		carrot.addVitamins(calcium, "20.1mg" );
+		carrot.addVitamins(getium, "20.1mg" );
 		carrot.addVitamins(iron, "0.2mg" );
 		carrot.addVitamins(magnesium, "7.3mg" );
 		carrot.addVitamins(phosphorus, "21.4mg" );
@@ -196,7 +196,7 @@ public class FoodList {
 		Food.addToDietQueryList(carrot);
 	}
 	
-	public static void calcBananas(){
+	public static void getBananas(){
 		// Bananas
 		Food bananas = new Food("Banana (medium)", 105,"Clear");
 		bananas.addVitamins(vitA, "75.5IU" );
@@ -211,7 +211,7 @@ public class FoodList {
 		bananas.addVitamins(vitB5Pantothenic, "0.4mg" );
 		
 		//Minerals
-		bananas.addVitamins(calcium, "5.9mg" );
+		bananas.addVitamins(getium, "5.9mg" );
 		bananas.addVitamins(iron, "0.3mg" );
 		bananas.addVitamins(magnesium, "31.9mg" );
 		bananas.addVitamins(phosphorus, "26.0mg" );
@@ -224,7 +224,7 @@ public class FoodList {
 		Food.addToDietQueryList(bananas);
 	}
 	
-	public static void calcSuperMalt(){
+	public static void getSuperMalt(){
 		// SuperMalt Drink
 		Food supermalt = new Food("SuperMalt (330ml)", 0,"Clear");
 		supermalt.addVitamins(vitB1Thiamine, "4.6mg" );
@@ -235,7 +235,7 @@ public class FoodList {
 		Food.addToDietQueryList(supermalt);
 	}
 	
-	public static void calcAllBran(){
+	public static void getAllBran(){
 		// All Bran Flakes
 		Food allBran = new Food("Kellogs All Bran (40g)", 0,"Clear");
 		allBran.addVitamins(vitB1Thiamine, "0.28mg" );
@@ -251,7 +251,7 @@ public class FoodList {
 		Food.addToDietQueryList(allBran);
 	}
 	
-	public static void calcAlmondMilk(){
+	public static void getAlmondMilk(){
 		// Almond Milk
 		Food almondMilk = new Food("Almond Milk (100m)", 0,"Clear");
 		almondMilk.addVitamins(fibre, "200mg");
@@ -261,11 +261,11 @@ public class FoodList {
 		almondMilk.addVitamins(vitB12, "0.38mcg");
 		almondMilk.addVitamins(fibre, "200mg");
 		almondMilk.addVitamins(vitB2RiboFlavin, "0.21mg");
-		almondMilk.addVitamins(calcium, "120mg");
+		almondMilk.addVitamins(getium, "120mg");
 		Food.addToDietQueryList(almondMilk);
 	}
 
-	public static void calcEggs(){
+	public static void getEggs(){
 		// Eggs medium
 		Food eggs = new Food("Egg (medium)", 105,"white yellow");
 		eggs.addVitamins(vitA, "214IU" );
@@ -282,7 +282,7 @@ public class FoodList {
 		eggs.addVitamins(vitB5Pantothenic, "0.6mg" );
 		
 		//Minerals
-		eggs.addVitamins(calcium, "23.3mg" );
+		eggs.addVitamins(getium, "23.3mg" );
 		eggs.addVitamins(iron, "0.8mg" );
 		eggs.addVitamins(magnesium, "5.3mg" );
 		eggs.addVitamins(phosphorus, "84.0mg" );
@@ -295,7 +295,7 @@ public class FoodList {
 		Food.addToDietQueryList(eggs);
 	}
 	
-	public static void calcClementines(){
+	public static void getClementines(){
 		// Clementine medium
 		Food clementine = new Food("Clementine (medium)", 0,"Orange");
 		clementine.addVitamins(vitC, "36.10mg" );
@@ -308,7 +308,7 @@ public class FoodList {
 		clementine.addVitamins(vitB5Pantothenic, "0.1mg" );
 		
 		//Minerals
-		clementine.addVitamins(calcium, "22.2mg" );
+		clementine.addVitamins(getium, "22.2mg" );
 		clementine.addVitamins(iron, "0.1mg" );
 		clementine.addVitamins(magnesium, "7.4mg" );
 		clementine.addVitamins(phosphorus, "15.5mg" );
@@ -319,7 +319,7 @@ public class FoodList {
 		clementine.addVitamins(selenium, "0.1mcg");
 		Food.addToDietQueryList(clementine);
 	}
-	public static void calcTomatoes(){
+	public static void getTomatoes(){
 		// Tomatoes medium
 		Food tomatoes = new Food("Tomato", 105,"red");
 		tomatoes.addVitamins(vitA, "1025IU" );
@@ -334,7 +334,7 @@ public class FoodList {
 		tomatoes.addVitamins(vitB5Pantothenic, "0.1mg" );
 		
 		//Minerals
-		tomatoes.addVitamins(calcium, "12.3mg" );
+		tomatoes.addVitamins(getium, "12.3mg" );
 		tomatoes.addVitamins(iron, "0.3mg" );
 		tomatoes.addVitamins(magnesium, "13.5mg" );
 		tomatoes.addVitamins(phosphorus, "29.5mg" );
@@ -345,7 +345,7 @@ public class FoodList {
 		tomatoes.addVitamins(manganese, "0.1mg");
 		Food.addToDietQueryList(tomatoes);
 	}	
-	public static void calcWaterDrink(){
+	public static void getWaterDrink(){
 		// Water Liquid
 		Food waterDrink = new Food("Water (500ml)", 0,"Clear");
 		waterDrink.addVitamins(waterNutrient, "500ml");

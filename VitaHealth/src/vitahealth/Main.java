@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Main {
 	static Scanner sc = new Scanner(System.in);
-
 	public static void main(String[] args) {
 
 		boolean quit = false;
@@ -16,46 +15,46 @@ public class Main {
 			menuOption = sc.nextInt();
 			switch (menuOption) {
 			case 1:
-				FoodList.calcSweetPotatoes();
+				FoodList.getSweetPotatoes();
 				break;
 			case 2:
-				FoodList.calcPotatoes();
+				FoodList.getPotatoes();
 				break;
 			case 3:
-				FoodList.calcAlmonds();
+				FoodList.getAlmonds();
 				break;
 			case 4:
-				FoodList.calcLemon();
+				FoodList.getLemon();
 				break;
 			case 5:
-				FoodList.calcKiwi();
+				FoodList.getKiwi();
 				break;
 			case 6:
-				FoodList.calcCarrots();
+				FoodList.getCarrots();
 				break;
 			case 7:
-				FoodList.calcBananas();
+				FoodList.getBananas();
 				break;
 			case 8:
-				FoodList.calcClementines();
+				FoodList.getClementines();
 				break;
 			case 9:
-				FoodList.calcTomatoes();
+				FoodList.getTomatoes();
 				break;
 			case 10:
-				FoodList.calcWaterDrink();
+				FoodList.getWaterDrink();
 				break;
 			case 11:
-				FoodList.calcSuperMalt();
+				FoodList.getSuperMalt();
 				break;
 			case 12:
-				FoodList.calcAllBran();
+				FoodList.getAllBran();
 				break;
 			case 13:
-				FoodList.calcAlmondMilk();
+				FoodList.getAlmondMilk();
 				break;
 			case 14:
-				FoodList.calcEggs();
+				FoodList.getEggs();
 				break;	
 			case 100:
 				quit = true;
@@ -65,11 +64,8 @@ public class Main {
 				break;
 
 			}
-
 			FoodList.calcAllFood();
-
 		}
-		
 	}
 
 	private static void printMenuOptions() {
