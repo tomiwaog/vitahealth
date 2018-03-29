@@ -10,12 +10,12 @@ public class FoodList {
 	private static Vitamins vitB5Pantothenic = Vitamins.createVitamins("Vitamin B5","Pantothenic acid","","");
 	private static Vitamins vitB6 = Vitamins.createVitamins("Vitamin B6","","","");
 	private static Vitamins vitB9Folate = Vitamins.createVitamins("Vitamin B9","Folate Folic acid","","");
-	private static Vitamins vitB12 = Vitamins.createVitamins("Vitamin B12","Cobalamin","","");
+	private static Vitamins vitB12 = Vitamins.createVitamins("VitaminB12", "Cobalamin","","");
 	private static Vitamins vitC = Vitamins.createVitamins("Vitamin C", "L-ascorbic acid", "", "Not Stored");
 	private static Vitamins vitD = Vitamins.createVitamins("Vitamin D", "getitriol", "", "Liver");
 	private static Vitamins vitE = Vitamins.createVitamins("Vitamin E", "Alpha Tocopherol", "","");
 	private static Vitamins vitK = Vitamins.createVitamins("Vitamin K", "", "", "");
-	private static Vitamins getium = Vitamins.createVitamins("getium", "", "", "");
+	private static Vitamins calcium = Vitamins.createVitamins("Calcium", "", "", "");
 	private static Vitamins iron = Vitamins.createVitamins("Iron", "", "", "");
 	private static Vitamins magnesium = Vitamins.createVitamins("Magnesium", "", "", "");
 	private static Vitamins phosphorus = Vitamins.createVitamins("Phosphorus", "", "", "");
@@ -45,7 +45,7 @@ public class FoodList {
 		sweetPotatoes.addVitamins(vitC, "3.1mg");
 		sweetPotatoes.addVitamins(vitE , "0.8mg");
 		sweetPotatoes.addVitamins(vitK ,"2.6mcg");
-		sweetPotatoes.addVitamins(getium ,"43.3mg");
+		sweetPotatoes.addVitamins(calcium ,"43.3mg");
 		sweetPotatoes.addVitamins(iron ,"0.8mg");
 		sweetPotatoes.addVitamins(magnesium ,"30.8mg");
 		sweetPotatoes.addVitamins(phosphorus ,"61.6mg");
@@ -77,7 +77,7 @@ public class FoodList {
 		potatoes.addVitamins(vitK, "3.5mcg");
 		potatoes.addVitamins(potassium ,"926mg");
 		potatoes.addVitamins(manganese,"0.4mg");
-		potatoes.addVitamins(getium,"25.9mg");
+		potatoes.addVitamins(calcium,"25.9mg");
 		potatoes.addVitamins(iron,"1.9mg");
 		potatoes.addVitamins(magnesium,"48.4mg");
 		potatoes.addVitamins(phosphorus,"121mg");
@@ -102,7 +102,7 @@ public class FoodList {
 		almonds.addVitamins(vitC, "0.0mg");
 		almonds.addVitamins(vitE, "7.3mg");
 		almonds.addVitamins(vitK, "0.0mg");
-		almonds.addVitamins(getium ,"73.9mg");
+		almonds.addVitamins(calcium ,"73.9mg");
 		almonds.addVitamins(iron ,"1.0mg");
 		almonds.addVitamins(magnesium ,"75.0mg");
 		almonds.addVitamins(phosphorus ,"136mg");
@@ -129,7 +129,7 @@ public class FoodList {
 		lemon.addVitamins(vitB3Niacin, "0.2mg" );
 		lemon.addVitamins(vitB6, "0.1mg" );
 		lemon.addVitamins(vitB5Pantothenic, "0.3mg" );
-		lemon.addVitamins(getium, "65.9mg" );
+		lemon.addVitamins(calcium, "65.9mg" );
 		lemon.addVitamins(iron, "0.8mg" );
 		lemon.addVitamins(magnesium, "13.0mg" );
 		lemon.addVitamins(phosphorus, "16.2mg" );
@@ -155,7 +155,7 @@ public class FoodList {
 		kiwi.addVitamins(vitB5Pantothenic, "0.1mg" );
 		
 		//Minerals
-		kiwi.addVitamins(getium, "25.8mg" );
+		kiwi.addVitamins(calcium, "25.8mg" );
 		kiwi.addVitamins(iron, "0.2mg" );
 		kiwi.addVitamins(magnesium, "12.9mg" );
 		kiwi.addVitamins(phosphorus, "25.8mg" );
@@ -183,7 +183,7 @@ public class FoodList {
 		carrot.addVitamins(vitB5Pantothenic, "0.2mg" );
 		
 		//Minerals
-		carrot.addVitamins(getium, "20.1mg" );
+		carrot.addVitamins(calcium, "20.1mg" );
 		carrot.addVitamins(iron, "0.2mg" );
 		carrot.addVitamins(magnesium, "7.3mg" );
 		carrot.addVitamins(phosphorus, "21.4mg" );
@@ -211,7 +211,7 @@ public class FoodList {
 		bananas.addVitamins(vitB5Pantothenic, "0.4mg" );
 		
 		//Minerals
-		bananas.addVitamins(getium, "5.9mg" );
+		bananas.addVitamins(calcium, "5.9mg" );
 		bananas.addVitamins(iron, "0.3mg" );
 		bananas.addVitamins(magnesium, "31.9mg" );
 		bananas.addVitamins(phosphorus, "26.0mg" );
@@ -244,7 +244,7 @@ public class FoodList {
 		allBran.addVitamins(vitB6, "0.35mg" );
 		allBran.addVitamins(vitB9Folate, "100mcg");
 		allBran.addVitamins(vitD, "1.3mcg" );
-		allBran.addVitamins(vitB12, "0.63mcg" );
+		allBran.addVitamins(vitB12, "1.6mcg" );
 		allBran.addVitamins(iron, "3.5mg");
 		allBran.addVitamins(sodium, "380mg");
 		allBran.addVitamins(fibre, "11000mg");
@@ -259,9 +259,9 @@ public class FoodList {
 		almondMilk.addVitamins(vitD, "0.75mcg");
 		almondMilk.addVitamins(vitE, "1.8mg");
 		almondMilk.addVitamins(vitB12, "0.38mcg");
-		almondMilk.addVitamins(fibre, "200mg");
+		almondMilk.addVitamins(fibre, "400mg");
 		almondMilk.addVitamins(vitB2RiboFlavin, "0.21mg");
-		almondMilk.addVitamins(getium, "120mg");
+		almondMilk.addVitamins(calcium, "120mg");
 		Food.addToDietQueryList(almondMilk);
 	}
 
@@ -282,7 +282,7 @@ public class FoodList {
 		eggs.addVitamins(vitB5Pantothenic, "0.6mg" );
 		
 		//Minerals
-		eggs.addVitamins(getium, "23.3mg" );
+		eggs.addVitamins(calcium, "23.3mg" );
 		eggs.addVitamins(iron, "0.8mg" );
 		eggs.addVitamins(magnesium, "5.3mg" );
 		eggs.addVitamins(phosphorus, "84.0mg" );
@@ -308,7 +308,7 @@ public class FoodList {
 		clementine.addVitamins(vitB5Pantothenic, "0.1mg" );
 		
 		//Minerals
-		clementine.addVitamins(getium, "22.2mg" );
+		clementine.addVitamins(calcium, "22.2mg" );
 		clementine.addVitamins(iron, "0.1mg" );
 		clementine.addVitamins(magnesium, "7.4mg" );
 		clementine.addVitamins(phosphorus, "15.5mg" );
@@ -334,7 +334,7 @@ public class FoodList {
 		tomatoes.addVitamins(vitB5Pantothenic, "0.1mg" );
 		
 		//Minerals
-		tomatoes.addVitamins(getium, "12.3mg" );
+		tomatoes.addVitamins(calcium, "12.3mg" );
 		tomatoes.addVitamins(iron, "0.3mg" );
 		tomatoes.addVitamins(magnesium, "13.5mg" );
 		tomatoes.addVitamins(phosphorus, "29.5mg" );

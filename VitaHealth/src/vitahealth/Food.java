@@ -74,8 +74,6 @@ public class Food {
 
 	private void addTotals(String vitName, double vitQuantity) {
 
-		vitQuantity = ((Math.round(vitQuantity * 100.0)) / 100.0);
-
 		if (vitName.contains(" A")) {
 			totalA += vitQuantity;
 		} else if (vitName.contains(" B1")) {
@@ -95,7 +93,7 @@ public class Food {
 		 else if (vitName.contains(" B9")) {
 				totalB9 += vitQuantity;
 			}
-		 else if (vitName.contains(" B12")) {
+		 else if (vitName.contains("VitaminB12")) {
 				totalB12 += vitQuantity;
 			}
 		 else if (vitName.contains(" C")) {
@@ -190,7 +188,7 @@ public class Food {
 		System.out.print("\nSelenium: \t" + ((Math.round(totalSelenium * 100.0)) / 100.0) + "mg | " + (int) ((totalSelenium / 0.055) * 100) + "%"); //
 		System.out.print("\nOmega 3: \t" + ((Math.round(totalOmega3 * 100.0)) / 100.0) + "mg | " + (int) ((totalOmega3 / 250) * 100) + "%"); //
 		System.out.print("\nOmega 6: \t" + ((Math.round(totalOmega6 * 100.0)) / 100.0) + "mg | " + (int) ((totalOmega6 / 17) * 100) + "% (NB: less is better)"); //
-		System.out.print("\nFibre: \t\t" + ((Math.round(totalFibre * 100.0)) / 100.0) + "mg | " + (int) ((totalFibre / 30) * 100) + "%"); //
+		System.out.print("\nFibre: \t\t" + ((Math.round(totalFibre * 100.0)) / 100.0) + "mg | " + (int) ((totalFibre / 30000) * 100) + "%\n"); //
 	
 		System.out.println("*******************************************");
 		System.out.println("*******************************************");
