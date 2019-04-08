@@ -69,7 +69,6 @@ public class Main {
 	}
 
 	private static void printMenuOptions() {
-		// TODO Auto-generated method stub
 		System.out
 				.println("\n*** Please select food to add *** \n\n1. Sweet Potatoes \n"
 						+ "2. Potatoes \n"+

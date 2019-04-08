@@ -137,7 +137,7 @@ public class Food {
 			totalOmega6+= vitQuantity;
 		}
 		else if (vitName.contains("Fibre")) {
-			totalFibre= vitQuantity;
+			totalFibre+= vitQuantity;
 		}
 	}
 
